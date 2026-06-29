@@ -23,10 +23,10 @@ Do not skip any steps. If you do not get authorised on the ZeroTier network firs
      * Mac/Linux: Open the Terminal application.
   2. Run the following SSH command. Note the `-p 2201` is strictly required as the remote computer listens on port 2201, not the default port 22.
 
-    ssh root@[HOST_ZEROTIER_IP] -p 2201
+    ssh root@[HOST_IP] -p 2201
 
   3. When prompted about the authenticity of the host, type yes and press Enter.
-  4. Enter the password when prompted: `[PASSWORD]` (Note: the terminal will not show any characters while you type the password).
+  4. Enter the password when prompted: `[HOST_PASSWORD]` (Note: the terminal will not show any characters while you type the password).
 You are now inside the Linux environment with full access to the GPU and the Python tools. The shared data directory is located at `/data`.
 # Phase 3: OPTIONAL -- Connect using Visual Studio Code
   Using a raw terminal to write Python code and view generated plots is a terrible workflow. It is highly recommended to use Visual Studio Code to attach directly to the remote computer.
@@ -34,7 +34,7 @@ You are now inside the Linux environment with full access to the GPU and the Pyt
   2. Open VS Code, go to the Extensions tab (the squares icon on the left), and search for Remote - SSH (published by Microsoft). Install it.
   3. Press F1 to open the command palette and type `Remote-SSH: Connect to Host...`
   4. Select **Add New SSH Host...**
-  5. Enter the exact same command you used in Phase 2: `ssh root@[HOST_ZEROTIER_IP] -p 2201`
+  5. Enter the exact same command you used in Phase 2: `ssh root@[HOST_IP] -p 2201`
   6. Select the default configuration file to save it.
   7. Click **Connect** in the bottom right popup, or press `F1` again, select `Remote-SSH: Connect to Host...`, and click the IP address you just saved.
   8. Enter the password when prompted.

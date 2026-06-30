@@ -13,7 +13,7 @@ Do not skip any steps. If you do not get authorised on the ZeroTier network firs
      * Enter this exact Network ID: `[NETWORK_ID]`
      * Check the boxes for "Allow Managed IPs" and "Allow Global IP" if prompted, then click Join.
   5. Send your Node Address for Authorisation:
-     * Right-click the ZeroTier icon again and look at the top of the menu. You will see a 10-character alphanumeric string (e.g., Node ID: 8a9b2c3d4e).
+     * Right-click the ZeroTier icon again and look at the top of the menu. You will see a 10-character alphanumeric string (e.g. My Address: 8a9b2c3d4e).
      * **STOP HERE**. Email or message this Node ID to the server administrator.
      * You cannot access the server until the administrator manually authorises your node on the network.
 # Phase 2: Connect to the Remote Computer via SSH
@@ -27,7 +27,7 @@ Do not skip any steps. If you do not get authorised on the ZeroTier network firs
 
   3. When prompted about the authenticity of the host, type yes and press Enter.
   4. Enter the password when prompted: `[HOST_PASSWORD]` (Note: the terminal will not show any characters while you type the password).
-You are now inside the Linux environment with full access to the GPU and the Python tools. The shared data directory is located at `/data`.
+You are now inside the Linux environment with full access to the GPU and the Python tools. The shared data directory is located at `/data`. 
 # Phase 3: OPTIONAL -- Connect using Visual Studio Code
   Using a raw terminal to write Python code and view generated plots is a terrible workflow. It is highly recommended to use Visual Studio Code to attach directly to the remote computer.
   1. Download and install Visual Studio Code.
